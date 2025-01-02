@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpan Pinjam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/Users/Sigit Putro Pangestu/Downloads/SP 16;9.jpeg" alt="Logo Aplikasi">
+        <h1>Aplikasi Simpan Pinjam</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#form-transaksi">Nama Transaksi</a></li>
+                <li><a href="#daftar-transaksi">Riwayat Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda">
+            <h2>Selamat Datang di Aplikasi Simpan Pinjam</h2>
+            <p>Aplikasi ini membantu Anda mengelola pemasukan dan pengeluaran secara efisien.Temukan
+               kemudahan dalam melakukan transaksi pinjaman dan simpanan yang cepat dan aman, kapan saja, di mana saja.</p>
+        </section>
+
+        <section id="form-transaksi">
+            <h2>Nama Transaksi</h2>
+            <form id="transaksi-form">
+                <label for="nama">Nama Transaksi:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah" required>
+
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="Pemasukan">Pemasukan</option>
+                    <option value="Pengeluaran">Pengeluaran</option>
+                    <option value="Simpan">Simpan</option>
+                    <option value="Pinjam">Pinjam</option>
+                </select>
+
+                <button type="submit">Simpan Transaksi</button>
+            </form>
+        </section>
+
+        <section id="daftar-transaksi">
+            <h2>Riwayat Transaksi</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                        <th>Waktu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data akan ditampilkan di sini oleh JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aplikasi Simpan Pinjam</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
